@@ -95,8 +95,8 @@ class Infusionsoft_Generated_Contact extends Infusionsoft_Generated_Base{
     public function fieldExists($field){
         return (array_search($field, self::$tableFields) !== false);
     }
-	
-	public function addCustomField($name){
+
+	public static function addCustomField($name){
         if (!in_array($name, self::$tableFields)){
             self::$tableFields[] = $name;
         }
